@@ -1,0 +1,26 @@
+2019-02-12 23:07:20,671 [Worker-5] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2019-02-12 23:07:50,981 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ianperfitt:house-show-webapp:0.0.1-SNAPSHOT @ /Users/ianperfitt/Documents/House-Show-Web-App/server-side/pom.xml.
+2019-02-12 23:07:54,641 [Worker-9] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /server-side/src/main/java
+2019-02-12 23:07:54,642 [Worker-9] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /server-side/src/test/java
+2019-02-12 23:07:55,197 [Worker-9] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 10 sec
+2019-02-12 23:08:00,543 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-02-12 23:08:00,544 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/ianperfitt/Documents/House-Show-Web-App/server-side/src/main/resources
+2019-02-12 23:08:00,544 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/ianperfitt/Documents/House-Show-Web-App/server-side/src/main/resources
+2019-02-12 23:08:00,550 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-02-12 23:08:00,550 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/ianperfitt/Documents/House-Show-Web-App/server-side/src/test/resources
+2019-02-12 23:10:46,871 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ianperfitt:house-show-web-app:0.0.1-SNAPSHOT @ /Users/ianperfitt/Documents/House-Show-Web-App/server-side/pom.xml.
+2019-02-12 23:10:47,603 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-02-12 23:10:47,603 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/ianperfitt/Documents/House-Show-Web-App/server-side/src/main/resources
+2019-02-12 23:10:47,603 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/ianperfitt/Documents/House-Show-Web-App/server-side/src/main/resources
+2019-02-12 23:10:47,606 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-02-12 23:10:47,606 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/ianperfitt/Documents/House-Show-Web-App/server-side/src/test/resources
+2019-02-12 23:10:54,059 [Worker-3] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2019-02-12 23:10:54,844 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ianperfitt:house-show-web-app:0.0.1-SNAPSHOT @ /Users/ianperfitt/Documents/House-Show-Web-App/server-side/pom.xml.
+2019-02-12 23:10:55,429 [Worker-3] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /server-side/src/main/java
+2019-02-12 23:10:55,429 [Worker-3] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /server-side/src/test/java
+2019-02-12 23:10:55,649 [Worker-3] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 1 sec
+2019-02-12 23:10:56,699 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-02-12 23:10:56,700 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/ianperfitt/Documents/House-Show-Web-App/server-side/src/main/resources
+2019-02-12 23:10:56,700 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/ianperfitt/Documents/House-Show-Web-App/server-side/src/main/resources
+2019-02-12 23:10:56,702 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-02-12 23:10:56,702 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/ianperfitt/Documents/House-Show-Web-App/server-side/src/test/resources
