@@ -1,0 +1,22 @@
+package com.ianperfitt.Services;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.ianperfitt.Entities.Users;
+import com.ianperfitt.Repo.UserRepo;
+
+@Service
+public class UserServiceImpl implements UserService {
+
+	@Autowired
+	private UserRepo ur;
+
+	@Override
+	public Users register(Users u) {
+
+		return ur.save(u);
+	}
+
+}
+

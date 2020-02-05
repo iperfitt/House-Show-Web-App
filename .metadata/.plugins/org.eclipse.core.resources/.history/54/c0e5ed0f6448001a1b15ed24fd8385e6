@@ -1,0 +1,46 @@
+package com.ianperfitt.Application;
+
+import java.sql.SQLException;
+import java.util.stream.Stream;
+
+import javax.activation.DataSource;
+
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+
+import com.ianperfitt.Entities.User;
+import com.ianperfitt.Repo.UserRepo;
+
+import oracle.jdbc.datasource.OracleDataSource;
+
+@SpringBootApplication
+public class Application {
+
+	public static void main(String[] args) {
+		SpringApplication.run(Application.class, args);
+	}
+	
+	@Bean
+    DataSource dataSource() throws SQLException {
+        OracleDataSource dataSource = new OracleDataSource();
+        dataSource.setUser(username);
+        dataSource.setPassword(password);
+        dataSource.setURL(url);
+        dataSource.setImplicitCachingEnabled(true);
+        dataSource.setFastConnectionFailoverEnabled(true);
+        return dataSource;
+    }
+	
+	@Bean
+    CommandLineRunner init(UserRepo userRepository) {
+        return args -> {
+            Stream.of("John", "Julie", "Jennifer", "Helen", "Rachel").forEach(name -> {
+                User user = new User(1, "Ian", "Perfitt");
+                userRepository.save(user);
+            });
+            userRepository.findAll().forEach(System.out::println);
+        };
+    }
+}

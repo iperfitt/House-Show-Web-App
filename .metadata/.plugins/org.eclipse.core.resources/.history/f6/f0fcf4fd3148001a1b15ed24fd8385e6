@@ -1,0 +1,88 @@
+package com.ianperfitt.Entities;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
+import javax.persistence.Table;
+
+/*
+ * User entity mapped to appuser table in database. Contains relevant information
+ * associated with a user including credentials and address of user.
+ * 
+ */
+
+@Entity
+@Table(name = "appuser")
+public class User {
+
+	/*
+	 * Tells Hibernate to use the SQL sequence provided in the database when
+	 * generating primary keys for persisted User entities.
+	 */
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "user_id_seq")
+	@SequenceGenerator(name = "user_id_seq", sequenceName = "user_id_seq", allocationSize = 1)
+	private Long user_id;
+
+	private String firstname;
+
+	private String lastname;
+
+	public Long getUser_id() {
+		return user_id;
+	}
+
+	public void setUser_id(Long user_id) {
+		this.user_id = user_id;
+	}
+
+	public String getFirstname() {
+		return firstname;
+	}
+
+	public void setFirstname(String firstname) {
+		this.firstname = firstname;
+	}
+
+	public String getLastname() {
+		return lastname;
+	}
+
+	public void setLastname(String lastname) {
+		this.lastname = lastname;
+	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((firstname == null) ? 0 : firstname.hashCode());
+		result = prime * result + ((lastname == null) ? 0 : lastname.hashCode());
+		result = prime * result + ((user_id == null) ? 0 : user_id.hashCode());
+		return result;
+	}
+
+	
+
+	@Override
+	public String toString() {
+		return "User [user_id=" + user_id + "firstname=" + firstname + ", lastname=" + lastname + "]";
+	}
+
+	public User(Long user_id, String username, String pass, String bio, String email, String phonenumber,
+			String firstname, String lastname) {
+		super();
+		this.user_id = user_id;
+		this.firstname = firstname;
+		this.lastname = lastname;
+	}
+
+	public User() {
+		super();
+	}
+
+}
+

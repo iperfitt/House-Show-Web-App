@@ -1,5 +1,7 @@
 package com.ianperfitt.Services;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -13,10 +15,9 @@ public class UserServiceImpl implements UserService {
 	private UserRepo ur;
 
 	@Override
-	public User register(User u) {
+	public List<User> getUsers() {
 
-		return ur.save(u);
+		return (List<User>) ur.findAll();
 	}
 
 }
-
