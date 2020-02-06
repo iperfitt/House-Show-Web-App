@@ -6,12 +6,10 @@ import { HttpClient, HttpResponse } from '@angular/common/http';
 })
 export class UserService {
 
-  constructor(
-    private http: HttpClient
-  ) { }
+  constructor( private http: HttpClient ) { }
 
   getAllUsers() {
-    return this.http.get(`http://localhost:4200/Users`);
+    return this.http.get(`http://localhost:8080/Users`);
   }
 
 }
