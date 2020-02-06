@@ -1,0 +1,28 @@
+package com.ianperfitt.Controllers;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.ianperfitt.Entities.User;
+import com.ianperfitt.Services.UserService;
+
+@RestController
+@RequestMapping("Users")
+//@CrossOrigin(origins = "http://localhost:4200") 
+public class UserController {
+
+	@Autowired
+	private UserService us;
+
+	
+	public List<User> getUsers() {
+		System.out.println("Yoooooooo-----");
+		return us.getUsers();
+	}
+	
+}

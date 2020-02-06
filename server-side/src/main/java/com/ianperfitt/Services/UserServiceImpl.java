@@ -16,8 +16,12 @@ public class UserServiceImpl implements UserService {
 
 	@Override
 	public List<User> getUsers() {
+		
+		List<User> test = ur.findAll();
+		System.out.println(test);
+		System.out.println(ur.count());
 
-		return (List<User>) ur.findAll();
+		return ur.findAll();
 	}
 
 }
