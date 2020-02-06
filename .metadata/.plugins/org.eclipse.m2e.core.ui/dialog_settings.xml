@@ -14,6 +14,7 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="/Users/ianperfitt/Documents/GitHub/House-Show-Web-App/server-side"/>
 			<item value="/Users/ianperfitt/Documents/House-Show-Web-App/server-side"/>
 		</list>
 		<list key="projectNameTemplate">
