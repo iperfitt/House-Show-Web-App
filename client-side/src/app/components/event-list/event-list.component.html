@@ -1,0 +1,12 @@
+<div>Please see Local Event Listings Below</div>
+
+<div *ngFor="let event of events" class="eventlist">
+    <table>
+        <tr>
+            <th>{{ event.name }}</th>
+            <td>{{ event.location }}</td>
+        </tr>
+    </table>
+</div>
+
+

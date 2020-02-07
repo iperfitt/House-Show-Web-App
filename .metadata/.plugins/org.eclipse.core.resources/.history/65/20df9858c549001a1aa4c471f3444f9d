@@ -1,0 +1,57 @@
+package com.ianperfitt.Entities;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+/*
+ * Users entity mapped to users table in database.
+ * 
+ */
+
+@Entity
+@Table(name = "events")
+public class Event {
+
+	/*
+	 * Tells Hibernate to use the SQL sequence provided in the database when
+	 * generating primary keys for persisted User entities.
+	 */
+
+	@Id
+	@GeneratedValue
+	private Long id;
+
+	private String eventname;
+
+	private String location;
+
+
+	public String getFirstname() {
+		return firstname;
+	}
+
+	public void setFirstname(String firstname) {
+		this.firstname = firstname;
+	}
+
+	public String getLastname() {
+		return lastname;
+	}
+
+	public void setLastname(String lastname) {
+		this.lastname = lastname;
+	}
+
+	public Event(String firstname, String lastname) {
+		super();
+		this.firstname = firstname;
+		this.lastname = lastname;
+	}
+
+	public Event() {
+		super();
+	}
+
+}

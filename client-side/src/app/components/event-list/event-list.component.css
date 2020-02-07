@@ -1,0 +1,11 @@
+.event {
+    background-color: yellow;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .eventlist {
+      background-color: blue;
+      width: 100px;
+      height: 100px;
+  }

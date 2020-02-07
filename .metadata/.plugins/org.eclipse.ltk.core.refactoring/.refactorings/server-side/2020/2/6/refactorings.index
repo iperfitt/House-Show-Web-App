@@ -5,3 +5,10 @@
 1580940249142	Move file
 1580953823960	Rename type 'RegisterController'
 1580958232233	Rename package 'com.ianperfitt.Application'
+1581092172806	Rename type 'User'
+1581092526884	Rename type 'UserRepo'
+1581092538758	Rename compilation unit 'UserService.java'
+1581092547543	Rename compilation unit 'UserServiceImpl.java'
+1581092591243	Rename compilation unit 'UserController.java'
+1581092603794	Rename compilation unit 'EventController.java'
+1581092633884	Rename type 'EventsController'
