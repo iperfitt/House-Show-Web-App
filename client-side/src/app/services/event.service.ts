@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient} from '@angular/common/http';
+import { HttpClient, HttpHeaders, HttpParams} from '@angular/common/http';
 import { Event } from 'src/app/models/event';
 
 @Injectable({
@@ -14,7 +14,16 @@ export class EventService {
   }
 
   submitEvent(event : Event) {
-    return this.http.post(`http://localhost:8000/createEvent`,event, null);
+    let headers = new HttpHeaders({'Content-Type': 'application/json'});
+    let options = { headers: headers };
+    return this.http.post(`http://localhost:8000/createevent`,event, options);
   }
+
+  // deleteEvent(name : string) {
+  //   let headers = new HttpHeaders({'Content-Type': 'application/json'});
+  //   //let httpParams = new HttpParams().set('name', name);
+  //   let options = { headers: headers};
+  //   return this.http.delete(`http://localhost:8000/deleteevent/` + name, options);
+  // }
 
 }

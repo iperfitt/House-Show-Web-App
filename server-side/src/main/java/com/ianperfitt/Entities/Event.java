@@ -2,7 +2,9 @@ package com.ianperfitt.Entities;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 /*
@@ -20,7 +22,8 @@ public class Event {
 	 */
 
 	@Id
-	@GeneratedValue
+	@SequenceGenerator(name = "user_id_seq", sequenceName = "user_id_seq", allocationSize = 1)
+	@GeneratedValue(generator = "user_id_seq", strategy = GenerationType.AUTO)
 	private Long id;
 
 	private String name;
@@ -29,6 +32,11 @@ public class Event {
 
 	public String getName() {
 		return name;
+	}
+
+	@Override
+	public String toString() {
+		return "Event [id=" + id + ", name=" + name + ", location=" + location + "]";
 	}
 
 	public void setName(String name) {
@@ -41,10 +49,6 @@ public class Event {
 
 	public void setLocation(String location) {
 		this.location = location;
-	}
-
-	public void setId(Long id) {
-		this.id = id;
 	}
 
 	public Event(Long id, String name, String location) {

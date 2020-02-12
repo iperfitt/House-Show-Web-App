@@ -1,11 +1,24 @@
-.event {
-    background-color: yellow;
-    width: 100%;
-    text-align: center;
+body {
+    font-size: 25px;
+    padding-left: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+  button {
+      background-color: black;
+      color: white;
   }
-  
-  .eventlist {
-      background-color: blue;
-      width: 100px;
-      height: 100px;
+
+  table {
+    margin-left:auto; 
+    margin-right:auto;
+    border: 3px solid black;
+    align-content: center;
+    width: 50%;
+    
+  }
+
+  .eventListRow {
+    border: 3px solid black;
   }

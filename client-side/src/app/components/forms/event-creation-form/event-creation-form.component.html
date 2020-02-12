@@ -1,6 +1,9 @@
+<h1>Please enter the Event details below:</h1>
+
+<body>
+
 <div class="container">
-        <h1>Event Form</h1>
-        <form (onSubmit)="submitEvent()" #eventForm="ngForm">
+        <form (ngSubmit)="submitEvent()" #eventForm="ngForm" class="eventForm">
           <div class="form-group">
             <label for="name">Event Name</label>
             <input type="text" class="form-control" id="name" required [(ngModel)]="model.name" name = "name">
@@ -10,8 +13,7 @@
             <label for="location">Location</label>
             <input type="text" class="form-control" id="location" required [(ngModel)]="model.location" name = "location">
           </div>
-    
-          <button type="submit" class="btn btn-success">Submit</button>
-    
         </form>
+        <button type="submit" class="btn btn-success">Create Event</button>
     </div>
+    </body>

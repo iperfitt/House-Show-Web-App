@@ -9,13 +9,14 @@ import { EventService } from 'src/app/services/event.service';
 })
 export class EventCreationFormComponent implements OnInit {
 
-  model = new Event(0,"Dave's show", "30455Woodhaven")
-
-  submitEvent() {
-      this.eventService.submitEvent(this.model)
-  }
+  model = new Event(0,"", "")
 
   constructor(private eventService: EventService) { }
+
+  submitEvent() {
+  this.eventService.submitEvent(this.model).subscribe(
+    (val: any) => console.log(val)); 
+  }
   
   ngOnInit() {
   }

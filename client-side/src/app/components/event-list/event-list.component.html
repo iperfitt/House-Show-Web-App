@@ -1,12 +1,15 @@
-<div>Please see Local Event Listings Below</div>
+<body>
+    Please see local event listings below:
+</body>
 
-<div *ngFor="let event of events" class="eventlist">
-    <table>
+<table>
         <tr>
-            <th>{{ event.name }}</th>
-            <td>{{ event.location }}</td>
+          <th>Name</th>
+          <th>Location</th>
         </tr>
-    </table>
-</div>
-
-
+        <tr class= "eventListRow" *ngFor="let event of events" >
+            <td> {{event.name}} </td>
+            <td> {{event.location}} </td>
+            <button>More Info</button>
+        </tr>
+</table>    

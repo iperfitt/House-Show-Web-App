@@ -19,4 +19,16 @@ public class EventServiceImpl implements EventService {
 		return er.findAll();
 	}
 
+	@Override
+	public void createEvent(Event e) {
+		er.save(e);
+	}
+
+	@Override
+	public void deleteEvent(String name) {
+		System.out.println(name);
+		Long l = er.deleteByName(name);
+		System.out.println(l);
+	}
+
 }

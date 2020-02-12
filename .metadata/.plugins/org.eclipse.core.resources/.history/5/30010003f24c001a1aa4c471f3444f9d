@@ -1,0 +1,36 @@
+package com.ianperfitt.Services;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.ianperfitt.Entities.Event;
+import com.ianperfitt.Repo.EventRepo;
+
+@Service
+public class EventServiceImpl implements EventService {
+
+	@Autowired
+	private EventRepo er;
+
+	@Override
+	public List<Event> getAllEvents() {
+		er.deleteById((long) 0);
+		er.deleteById((long) 1);
+		er.deleteById((long) 2);
+		er.deleteById((long) 3);
+		er.deleteById((long) 4);
+		er.deleteById((long) 5);
+		er.deleteById((long) 6);
+		
+		return er.findAll();
+
+	}
+
+	@Override
+	public void createEvent(Event e) {
+		er.save(e);
+	}
+
+}
