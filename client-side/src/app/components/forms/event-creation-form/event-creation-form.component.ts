@@ -14,6 +14,7 @@ export class EventCreationFormComponent implements OnInit {
   constructor(private eventService: EventService) { }
 
   submitEvent() {
+    console.log(this.model);
   this.eventService.submitEvent(this.model).subscribe(
     (val: any) => console.log(val)); 
   }

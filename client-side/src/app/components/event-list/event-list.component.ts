@@ -17,10 +17,10 @@ export class EventListComponent implements OnInit {
       (val: any) => this.events = val);  
   }
 
-  deleteEvent(name : string) {
-    this.eventService.deleteEvent(name).subscribe(
-      (val: any) => console.log('ya boi gone man'));
-  }
+  // deleteEvent(name : string) {
+  //   this.eventService.deleteEvent(name).subscribe(
+  //     (val: any) => console.log('ya boi gone man'));
+  // }
 
 }
 
