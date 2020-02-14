@@ -2,23 +2,26 @@ body {
     padding-top: 20px;
 }
 
-.btn-success {
+.button {
+    color: white;
+    border-radius: 5px;
     background: black;
+}
+
+.buttoncontainer {
     text-align: center;
+    padding: 5px;   
 }
 
 .container {
     padding: 20px;
     border: 3px solid black;
     font-family: helvetica;
-    width: 300px;
-    align-content: center;
-    padding: 40px;
-    
+    width: fit-content;
 }
-
-.form-control {
-    width: 200px;
+.formgroup {
+    text-align: center;
+    padding: 5px;
 }
 
 h1 {

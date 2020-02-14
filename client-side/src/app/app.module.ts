@@ -7,6 +7,8 @@ import { EventListComponent } from './components/event-list/event-list.component
 import { AppRoutingModule } from './app-routing.module';
 import { EventCreationFormComponent } from './components/forms/event-creation-form/event-creation-form.component';
 import { CreateEventComponent } from './components/create-event/create-event.component';
+import { AgmCoreModule } from '@agm/core';
+
 
 @NgModule({
   declarations: [
@@ -19,7 +21,11 @@ import { CreateEventComponent } from './components/create-event/create-event.com
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyCbmhPp8vxHPCaB4nubu2M4EDqEZ2A-2vk',
+      libraries: ['places']
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
