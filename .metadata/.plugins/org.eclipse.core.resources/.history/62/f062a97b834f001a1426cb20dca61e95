@@ -46,7 +46,7 @@ public class Event {
 
 	@Override
 	public String toString() {
-		return "Event [id=" + id + ", name=" + name + ", location=" + location + ", genre=" + genre + "]";
+		return "Event [id=" + id + ", name=" + name + ", location=" + location + "]";
 	}
 
 	public void setName(String name) {
@@ -61,12 +61,11 @@ public class Event {
 		this.location = location;
 	}
 
-	public Event(Long id, String name, String location, String genre) {
+	public Event(Long id, String name, String location) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.location = location;
-		this.genre = genre;
 	}
 
 	public Event() {

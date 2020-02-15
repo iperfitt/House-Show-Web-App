@@ -8,6 +8,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { EventCreationFormComponent } from './components/forms/event-creation-form/event-creation-form.component';
 import { CreateEventComponent } from './components/create-event/create-event.component';
 import { AgmCoreModule } from '@agm/core';
+import { EventInfoComponent } from './components/event-info/event-info.component';
+import { AllisonComponent } from './components/allison/allison.component';
 
 
 @NgModule({
@@ -15,7 +17,9 @@ import { AgmCoreModule } from '@agm/core';
     AppComponent,
     EventListComponent,
     CreateEventComponent,
-    EventCreationFormComponent
+    EventCreationFormComponent,
+    EventInfoComponent,
+    AllisonComponent
   ],
   imports: [
     BrowserModule,

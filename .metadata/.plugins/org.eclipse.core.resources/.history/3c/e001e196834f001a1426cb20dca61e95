@@ -46,7 +46,7 @@ public class Event {
 
 	@Override
 	public String toString() {
-		return "Event [id=" + id + ", name=" + name + ", location=" + location + ", genre=" + genre + "]";
+		return "Event [id=" + id + ", name=" + name + ", location=" + location + "]";
 	}
 
 	public void setName(String name) {

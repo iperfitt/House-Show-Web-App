@@ -6,11 +6,14 @@
         <tr>
           <th>Name:</th>
           <th>Location:</th>
+          <th>Genre:</th>
           <th></th>
         </tr>
         <tr class= "eventListRow" *ngFor="let event of events" >
             <td> {{event.name}} </td>
             <td> {{event.location}} </td>
-            <button>More Info</button> 
+            <td> {{event.genre}}</td>
+
+            <button (click)="eventInfo()">More Info</button> 
         </tr>
 </table>    

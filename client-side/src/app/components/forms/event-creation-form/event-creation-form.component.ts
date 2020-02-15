@@ -10,7 +10,7 @@ import { EventService } from 'src/app/services/event.service';
 })
 export class EventCreationFormComponent implements OnInit {
 
-  model = new Event(0,"", "")
+  model = new Event(0,"", "", "")
 
   constructor(private eventService: EventService, private mapsAPILoader: MapsAPILoader, private ngZone: NgZone) { }
 

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { EventService } from '../../services/event.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'event-list',
@@ -8,7 +9,7 @@ import { EventService } from '../../services/event.service';
 })
 export class EventListComponent implements OnInit {
 
-  constructor(private eventService: EventService) { }
+  constructor(private eventService: EventService, private router: Router) { }
 
   events = []
 
@@ -17,10 +18,11 @@ export class EventListComponent implements OnInit {
       (val: any) => this.events = val);  
   }
 
-  // deleteEvent(name : string) {
-  //   this.eventService.deleteEvent(name).subscribe(
-  //     (val: any) => console.log('ya boi gone man'));
-  // }
+  eventInfo() { 
+    this.router.navigate(['/eventinfo'])
+      .then(success => console.log('navigation success?' , success))
+      .catch(console.error); 
+  } 
 
-}
+} 
 
