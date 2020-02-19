@@ -46,7 +46,7 @@
 			<artifactId>ojdbc</artifactId>
 			<version>11.2.0</version>
 			<scope>system</scope>
-			<systemPath>${basedir}/home/ec2-user/ojdbc6.jar</systemPath>
+			<systemPath>${basedir}/lib/ojdbc6.jar</systemPath>
 		</dependency>
 		<!-- 11.2.0.3 -->
 
