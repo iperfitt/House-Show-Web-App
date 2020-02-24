@@ -1,0 +1,6 @@
+package com.ianperfitt.Services;
+
+public class UserService {
+
+	void register(User u);
+}

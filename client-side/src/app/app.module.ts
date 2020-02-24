@@ -12,6 +12,7 @@ import { EventInfoComponent } from './components/event-info/event-info.component
 import { CookieService } from 'ngx-cookie-service';
 import { LoginComponent } from './components/login/login.component';
 import { LoginFormComponent } from './components/forms/login-form/login-form.component';
+import { EventService } from './services/event/event.service';
 
 
 @NgModule({
@@ -33,7 +34,7 @@ import { LoginFormComponent } from './components/forms/login-form/login-form.com
       libraries: ['places']
     })
   ],
-  providers: [CookieService],
+  providers: [CookieService, EventService],
   bootstrap: [AppComponent, ]
 })
 export class AppModule { }

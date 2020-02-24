@@ -26,7 +26,8 @@ export class AppComponent implements OnInit {
   }
 
   public ngOnInit(): void {
-    this.cookieService.set('cookie-name', 'our cookie value');
+    this.cookieService.set('email', 'testdb');
+    this.cookieService.set('password', 'fahkdjhfaskldhfjaksl');
     this.cookieValue = this.cookieService.get('cookie-name');
     console.log(this.cookieService.get('cookie-name'));
   }

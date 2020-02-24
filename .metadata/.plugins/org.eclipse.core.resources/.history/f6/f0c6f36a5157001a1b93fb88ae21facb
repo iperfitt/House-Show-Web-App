@@ -1,0 +1,5 @@
+package com.ianperfitt.Repo;
+
+public interface UserRepo {
+
+}

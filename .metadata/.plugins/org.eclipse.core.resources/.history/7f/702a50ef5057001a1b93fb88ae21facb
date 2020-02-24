@@ -1,0 +1,12 @@
+package com.ianperfitt.Entities;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "event")
+public class User {
+	
+	
+
+}

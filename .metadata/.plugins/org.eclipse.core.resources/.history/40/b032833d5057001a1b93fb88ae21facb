@@ -1,0 +1,5 @@
+package com.ianperfitt.Services;
+
+public interface UserService {
+
+}

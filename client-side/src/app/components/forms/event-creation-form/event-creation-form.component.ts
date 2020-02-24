@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild, ElementRef, NgZone } from '@angular/core';
 import { MapsAPILoader } from '@agm/core';
 import { Event } from 'src/app/models/event';
-import { EventService } from 'src/app/services/event.service';
+import { EventService } from 'src/app/services/event/event.service';
 
 @Component({
   selector: 'app-event-creation-form',
