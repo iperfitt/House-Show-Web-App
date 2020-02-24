@@ -24,3 +24,17 @@ h1 {
 .nav a:hover {
   color: grey;
 }
+
+button {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  float: right;
+  margin-right: 20px;
+  font-family: helvetica;
+  font-size: 25px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}

@@ -9,7 +9,7 @@ import { EventCreationFormComponent } from './components/forms/event-creation-fo
 import { CreateEventComponent } from './components/create-event/create-event.component';
 import { AgmCoreModule } from '@agm/core';
 import { EventInfoComponent } from './components/event-info/event-info.component';
-import { AllisonComponent } from './components/allison/allison.component';
+import { CookieService } from 'ngx-cookie-service';
 
 
 @NgModule({
@@ -18,8 +18,7 @@ import { AllisonComponent } from './components/allison/allison.component';
     EventListComponent,
     CreateEventComponent,
     EventCreationFormComponent,
-    EventInfoComponent,
-    AllisonComponent
+    EventInfoComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +29,7 @@ import { AllisonComponent } from './components/allison/allison.component';
       libraries: ['places']
     })
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [CookieService],
+  bootstrap: [AppComponent, ]
 })
 export class AppModule { }
