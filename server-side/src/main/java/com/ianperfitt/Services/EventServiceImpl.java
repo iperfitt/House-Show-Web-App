@@ -26,9 +26,6 @@ public class EventServiceImpl implements EventService {
 
 	@Override
 	public void deleteEvent(String name) {
-		System.out.println(name);
-		Long l = er.deleteByName(name);
-		System.out.println(l);
-	}
 
+	}
 }

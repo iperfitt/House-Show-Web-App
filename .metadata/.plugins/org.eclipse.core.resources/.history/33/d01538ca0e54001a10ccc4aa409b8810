@@ -1,0 +1,7 @@
+FROM openjdk:latest
+
+ADD target/springboot_
+
+ENTRYPOINT ["java", "-jar", "app.jar"]
+
+EXPOSE 8081
