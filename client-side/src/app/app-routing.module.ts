@@ -3,9 +3,11 @@ import { RouterModule, Routes } from '@angular/router';
 import { EventListComponent } from './components/event-list/event-list.component';
 import { CreateEventComponent } from './components/create-event/create-event.component';
 import { EventInfoComponent } from './components/event-info/event-info.component';
+import { LoginComponent } from './components/login/login.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'allevents', pathMatch: 'full'},
+  { path: '', pathMatch: 'full',redirectTo: 'login'},
+  { path: 'login', component: LoginComponent},
   { path: 'allevents', component: EventListComponent },
   { path: 'createevent', component: CreateEventComponent },
   { path: 'eventinfo', component: EventInfoComponent } 
@@ -15,4 +17,7 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+
+  constructor() {}
+ }
