@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from 'src/app/services/user/user.service';
 import { User } from 'src/app/models/user';
-import { HttpHeaders } from '@angular/common/http';
+import { CookieService } from 'ngx-cookie-service'; 
 
 @Component({
   selector: 'app-login-form',
@@ -10,13 +10,18 @@ import { HttpHeaders } from '@angular/common/http';
 })
 export class LoginFormComponent {
 
-  constructor(private userService: UserService) { }
+  constructor(private userService: UserService, private cookieService: CookieService) { }
 
-  model = new User(0, "", "");
+  cookieValue : string;
+
+  model = new User(null, "", "");
 
   submitCredentials() {
     this.userService.register(this.model).subscribe(
-    (val: any) => console.log(val)); 
+    (val: any) => {
+    this.cookieService.set('email', this.model.email);
+    this.cookieService.set('password', this.model.password);
+      }
+    ); 
   }
-
 }

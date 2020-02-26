@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { CookieService } from 'ngx-cookie-service'; 
 
 @Component({
@@ -6,13 +6,13 @@ import { CookieService } from 'ngx-cookie-service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
 
   private cookieValue: string;  
 
   private title = "DIY Event App"
 
-  constructor(private cookieService: CookieService) {
+  constructor() {
     // this.oauthService.redirectUri = window.location.origin;
     // this.oauthService.clientId = '{client-id}';
     // this.oauthService.scope = 'openid profile email';
@@ -24,12 +24,4 @@ export class AppComponent implements OnInit {
     //   this.oauthService.tryLogin();
     // });
   }
-
-  public ngOnInit(): void {
-    this.cookieService.set('email', 'testdb');
-    this.cookieService.set('password', 'fahkdjhfaskldhfjaksl');
-    this.cookieValue = this.cookieService.get('cookie-name');
-    console.log(this.cookieService.get('cookie-name'));
-  }
-
 }
