@@ -1,0 +1,12 @@
+package com.ianperfitt.Services;
+
+public class UserServiceImpl {
+	
+	@AutoWired
+	private UserRepo ur;
+	
+	void register(User u) {
+		
+	}
+
+}

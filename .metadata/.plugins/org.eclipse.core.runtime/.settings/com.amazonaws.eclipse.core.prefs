@@ -3,6 +3,6 @@ cognitoIdentityId=us-east-1\:8dca7075-e54c-491a-b574-cc30d01c4dca
 cognitoIdentityPoolId=us-east-1\:d4fdc07f-94fd-4cc6-94fb-f903657f05c1
 credentialProfileAccountIds=726a1791-58af-4bdb-bab8-8e2de8247f87
 currentAccount=726a1791-58af-4bdb-bab8-8e2de8247f87
-currentDefaultAccount=
+currentDefaultAccount=726a1791-58af-4bdb-bab8-8e2de8247f87
 ec2PreferencesImported=true
 eclipse.preferences.version=1

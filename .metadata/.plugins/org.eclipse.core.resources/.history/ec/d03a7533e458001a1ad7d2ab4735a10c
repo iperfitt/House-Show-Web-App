@@ -1,0 +1,17 @@
+package com.ianperfitt.Services;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.ianperfitt.Entities.User;
+import com.ianperfitt.Repo.UserRepo;
+
+public class UserServiceImpl {
+
+	@Autowired
+	private UserRepo ur;
+
+	void register(User u) {
+
+	}
+
+}

@@ -1,0 +1,12 @@
+package com.ianperfitt.Repo;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.ianperfitt.Entities.User;
+
+@Repository
+public interface UserRepo extends JpaRepository<User, Long> {
+
+	User findByEmailAddress(User u);
+
+}

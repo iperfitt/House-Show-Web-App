@@ -6,7 +6,8 @@
 <fullyQualifiedTypeName name="oracle.jdbc.datasource.OracleDataSource"/>
 <fullyQualifiedTypeName name="javax.sql.DataSource"/>
 <fullyQualifiedTypeName name="java.util.List"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="com.ianperfitt.Services.UserService"/>
 <fullyQualifiedTypeName name="com.ianperfitt.Entities.User"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="org.springframework.transaction.annotation.Transactional"/>
 </qualifiedTypeNameHistroy>

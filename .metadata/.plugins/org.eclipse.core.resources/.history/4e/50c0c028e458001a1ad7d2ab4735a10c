@@ -1,0 +1,15 @@
+package com.ianperfitt.Services;
+
+import com.ianperfitt.Entities.User;
+import com.ianperfitt.Repo.UserRepo;
+
+public class UserServiceImpl {
+
+	@AutoWired
+	private UserRepo ur;
+
+	void register(User u) {
+
+	}
+
+}
