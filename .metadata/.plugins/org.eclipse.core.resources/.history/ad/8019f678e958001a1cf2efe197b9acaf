@@ -18,7 +18,6 @@ public class LoginRegisterController {
 
 	@RequestMapping("/login")
 	public void register(@RequestBody User u) {
-		System.out.println("made it here biatch");
 		us.register(u);
 
 	}

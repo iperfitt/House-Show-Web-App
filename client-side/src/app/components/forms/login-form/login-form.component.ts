@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from 'src/app/services/user/user.service';
 import { User } from 'src/app/models/user';
+import { HttpHeaders } from '@angular/common/http';
 
 @Component({
   selector: 'app-login-form',
@@ -13,10 +14,9 @@ export class LoginFormComponent {
 
   model = new User(0, "", "");
 
-  register() {
-    let headers = new HttpHeaders({'Content-Type': 'application/json'});
-    let options = { headers: headers };
-    UserService.register()
+  submitCredentials() {
+    this.userService.register(this.model).subscribe(
+    (val: any) => console.log(val)); 
   }
 
 }

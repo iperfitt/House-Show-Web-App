@@ -13,7 +13,7 @@ public class UserServiceImpl implements UserService {
 	private UserRepo ur;
 
 	public void register(User u) {
-		if (ur.findByEmail(u.getEmail()) == null) {
+		if (ur.findByEmail(u.getEmail()) === null) {
 			ur.save(u);
 		}
 

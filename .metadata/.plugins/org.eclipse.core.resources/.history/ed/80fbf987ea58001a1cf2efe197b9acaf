@@ -8,7 +8,7 @@ import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "app_user")
+@Table(name = "user")
 public class User {
 
 	@Id
@@ -19,18 +19,6 @@ public class User {
 	private String email;
 
 	private String password;
-
-	public User() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
-
-	public User(Long id, String email, String password) {
-		super();
-		this.id = id;
-		this.email = email;
-		this.password = password;
-	}
 
 	public Long getId() {
 		return id;

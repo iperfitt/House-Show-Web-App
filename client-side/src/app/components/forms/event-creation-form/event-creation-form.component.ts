@@ -15,7 +15,6 @@ export class EventCreationFormComponent implements OnInit {
   constructor(private eventService: EventService, private mapsAPILoader: MapsAPILoader, private ngZone: NgZone) { }
 
   submitEvent() {
-    console.log(this.model);
   this.eventService.submitEvent(this.model).subscribe(
     (val: any) => console.log(val)); 
   }
