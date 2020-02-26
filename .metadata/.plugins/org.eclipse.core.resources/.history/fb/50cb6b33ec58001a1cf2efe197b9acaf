@@ -22,8 +22,8 @@ public class Event {
 	 */
 
 	@Id
-	@SequenceGenerator(name = "event_id_seq", sequenceName = "event_id_seq", allocationSize = 1)
-	@GeneratedValue(generator = "event_id_seq", strategy = GenerationType.AUTO)
+	@SequenceGenerator(name = "user_id_seq", sequenceName = "user_id_seq", allocationSize = 1)
+	@GeneratedValue(generator = "user_id_seq", strategy = GenerationType.AUTO)
 	private Long id;
 
 	private String name;
