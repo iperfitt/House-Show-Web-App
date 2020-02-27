@@ -16,7 +16,10 @@ public class UserServiceImpl implements UserService {
 		if (ur.findByEmail(u.getEmail()) == null) {
 			ur.save(u);
 		}
-
 	}
 
+	@Override
+	public User login(User u) {
+		return ur.save(u);
+	}
 }

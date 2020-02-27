@@ -13,6 +13,8 @@ import { CookieService } from 'ngx-cookie-service';
 import { LoginComponent } from './components/login/login.component';
 import { LoginFormComponent } from './components/forms/login-form/login-form.component';
 import { EventService } from './services/event/event.service';
+import { RegisterComponent } from './components/register/register.component';
+import { RegisterFormComponent } from './components/forms/register-form/register-form.component';
 
 
 @NgModule({
@@ -23,7 +25,9 @@ import { EventService } from './services/event/event.service';
     EventCreationFormComponent,
     EventInfoComponent,
     LoginComponent,
-    LoginFormComponent
+    LoginFormComponent,
+    RegisterComponent,
+    RegisterFormComponent
   ],
   imports: [
     BrowserModule,

@@ -16,11 +16,14 @@ export class LoginFormComponent {
 
   model = new User(null, "", "");
 
-  submitCredentials() {
-    this.userService.register(this.model).subscribe(
+  login() {
+    this.userService.login(this.model).subscribe(
     (val: any) => {
-    this.cookieService.set('email', this.model.email);
-    this.cookieService.set('password', this.model.password);
+      if (val != null) {
+        this.cookieService.set('email',  this.model.email);
+        this.cookieService.set('password', this.model.password);
+        
+        }
       }
     ); 
   }

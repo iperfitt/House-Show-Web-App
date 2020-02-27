@@ -12,6 +12,12 @@ export class UserService {
   register(user : User) {
     let headers = new HttpHeaders({'Content-Type': 'application/json'});
     let options = { headers: headers };
+    return this.http.post(`http://localhost:8000/register` ,user, options);
+  }
+
+  login(user : User) {
+    let headers = new HttpHeaders({'Content-Type': 'application/json'});
+    let options = { headers: headers };
     return this.http.post(`http://localhost:8000/login` ,user, options);
   }
 }

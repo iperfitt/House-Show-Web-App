@@ -5,4 +5,6 @@ import com.ianperfitt.Entities.User;
 public interface UserService {
 
 	void register(User u);
+
+	User login(User u);
 }

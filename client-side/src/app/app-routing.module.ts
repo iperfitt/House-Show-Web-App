@@ -4,10 +4,12 @@ import { EventListComponent } from './components/event-list/event-list.component
 import { CreateEventComponent } from './components/create-event/create-event.component';
 import { EventInfoComponent } from './components/event-info/event-info.component';
 import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
 
 const routes: Routes = [
-  { path: '', pathMatch: 'full',redirectTo: 'login'},
-  { path: 'login', component: LoginComponent},
+  { path: '', pathMatch: 'full',redirectTo: 'login' },
+  { path: 'login', component: LoginComponent },
+  { path: 'register', component: RegisterComponent }, 
   { path: 'allevents', component: EventListComponent },
   { path: 'createevent', component: CreateEventComponent },
   { path: 'eventinfo', component: EventInfoComponent } 

@@ -16,10 +16,15 @@ public class LoginRegisterController {
 	@Autowired
 	private UserService us;
 
-	@RequestMapping("/login")
+	@RequestMapping("/register")
 	public void register(@RequestBody User u) {
-		System.out.println("made it here biatch");
 		us.register(u);
+
+	}
+	
+	@RequestMapping("/login")
+	public User login(@RequestBody User u) {
+		return us.login(u);
 
 	}
 
